@@ -20,5 +20,5 @@ int main()
     mul obj1;
     obj1.set_val(3.14, 3);
     // obj2.set_val(23, 13);
-    cout << "Area of Circle " << obj1.do_mul() << endl;
+    cout << "AOC " << obj1.do_mul() << endl;
 }
