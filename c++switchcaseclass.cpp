@@ -1,52 +1,82 @@
 #include <iostream>
 using namespace std;
-void showchoices();
-
-class test
+class con
 {
-    int a, b;
+    int x, y;
 
 public:
-    void setval()
-    {
-        cout <<
-    }
+    int set_val();
+    void get_val();
+    int add();
+    int subtrack();
+    int multiply();
+    int divide();
 };
-
-int test::add()
+int con::set_val()
 {
-    return a + b;
-}
-
-int main()
-{
-    test pr;
-    int x, y;
     int choice;
-
     do
     {
-        showchoices();
+        get_val();
         cin >> choice;
         switch (choice)
         {
         case 1:
-            cout << "enter two number:";
+            cout << "Enter two numbers=";
             cin >> x >> y;
-            cout << "sum : " << pr.add() << endl;
+            cout << "sum" << add() << endl;
+            break;
+        case 2:
+            cout << "Enter two numbers=";
+            cin >> x >> y;
+            cout << " differece " << subtrack() << endl;
+            break;
+        case 3:
+            cout << "Enter two numbers=";
+            cin >> x >> y;
+            cout << " product " << multiply() << endl;
+            break;
+        case 4:
+            cout << "Enter two numbers=";
+            cin >> x >> y;
+            cout << "quotient" << divide() << endl;
             break;
         case 5:
             break;
         default:
-            cout << "Invalid input" << endl;
+            cout << "invalid input" << endl;
         }
     } while (choice != 5);
     return 0;
 }
-void showchoices()
+void con ::get_val()
 {
-    cout << "MENU\n";
-    cout << "1:ADD\n";
-    cout << "5:EXIT\n";
-    cout << "ENTER YOUR CHOICE:";
+    cout << "menu" << endl;
+    cout << "1.add" << endl;
+    cout << "2.subtract" << endl;
+    cout << "3.multiply" << endl;
+    cout << "4.divide" << endl;
+    cout << "5.exit" << endl;
+    cout << "enter your choice:" << endl;
+}
+int con::add()
+{
+    return x + y;
+}
+int con::subtrack()
+{
+    return x - y;
+}
+int con::multiply()
+{
+    return x * y;
+}
+int con::divide()
+{
+    return x / y;
+}
+int main()
+{
+    con c1;
+    c1.set_val();
 }
