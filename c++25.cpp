@@ -19,9 +19,11 @@ public:
 };
 int main()
 {
+
     apple p;
     int p_id;
     string p_name;
+
     cout << "enter your id: " << endl;
     cin >> p_id;
 
