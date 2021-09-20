@@ -1,7 +1,8 @@
 {
     "files.associations": {
         "ostream": "cpp",
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "STRUCT_P.C": "cpp"
     },
     "C_Cpp.errorSquiggles": "Disabled"
 }
