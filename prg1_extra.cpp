@@ -40,7 +40,7 @@ public:
 int main()
 {
     int i;
-    test p[5];
+    test p[4];
     for (i = 0; i < 2; i++)
     {
         cout << "\nthis is the student for= "
